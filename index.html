@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Project</title>
+    <title>Donut Clicker</title>
+    <link rel="stylesheet" href="src\css\style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="anchor"></div>
-    </div>
-    <script src="/src/app.js"></script>
+    <header>
+        <h1>Donut Clicker</h1>
+        <nav>
+            <ul>
+                <li><a href="#fred">Fred the Baker's Baking Company</a></li>
+                <li><a href="#inspiration">Inspiration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="play">
+            <section id="donut-clicker">
+                <h3>Donut Count<span id="donut-count">: 3</span></h3>
+                <button id="donut-clicker-button">CLICK</button>
+            </section>
+
+            <section id="auto-clicker">
+                <h3>Auto-Clickers Active<span id="auto-clicker-count">: 3</span></h3>
+                <button id="auto-clicker-button">Purchase Auto-Clicker</button>
+            </section>
+
+            <section id="donut-multiplier">
+                <h3>Donut Multiplier<span id="donut-multiplier-count">: 3</span></h3>
+                <button id="donut-multiplier-button">Purchase Donut Multiplier</button>
+            </section>
+        </div>
+
+        <section id="fred">
+            <h2>Fred the Baker's Baking Company</h2>
+            <p>We here at Fred the Baker's Baking Company love two things: making donuts and clicking mindlessly. Hope
+                you enjoy the game!</p>
+        </section>
+
+        <section id="inspiration">
+            <h2>Inspiration</h2>
+            <p>Inspired by <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Fred the Baker's Baking Company</p>
+            <p>1234 Main Sreet</p>
+            <p>Cleveland, Ohio </p>
+            <p>Call us: (012)345-6789</p>
+            <p>Email: bakerfred@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy;2021
+    </footer>
+
+    <script src="src\js\app.js"></script>
+    <script src="src\js\donutMaker.js"></script>
 </body>
+
 </html>
