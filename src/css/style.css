@@ -7,6 +7,12 @@ header {
     display: flex;
     justify-content: space-evenly;
     border-bottom: dotted 5px plum;
+    padding-bottom: 3%;
+}
+
+img {
+    height: 200px;
+    width: 250px;
 }
 
 ul {
@@ -14,16 +20,18 @@ ul {
 }
 
 footer {
-    margin-top: 30%;
+    margin-top: 20%;
     text-align: center;
 }
 
 button {
-    height: 60px;
-    width: 120px;
+    height: 100px;
+    width: 200px;
+    background-color: lightgray;
 }
 
 #play {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 10%;
 }
