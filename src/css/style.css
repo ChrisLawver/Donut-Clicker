@@ -25,9 +25,8 @@ footer {
 }
 
 button {
-    height: 90px;
-    width: 180px;
-    border-radius: 50%;
+    height: 100px;
+    width: 200px;
     background-color: lightgray;
 }
 
