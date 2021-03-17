@@ -51,6 +51,7 @@ button {
     margin-bottom: 10%;
 }
 
+
 .modal {
     display: none;
     position: fixed;
@@ -63,4 +64,5 @@ button {
     float: right;
     font-size: 28px;
     font-weight: bold;
+
   }
