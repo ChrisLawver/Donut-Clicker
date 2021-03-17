@@ -80,6 +80,7 @@ function addAutoClicker() {
         autoClickerCount++;
         counter = setInterval(addDonuts, 1000);   
 
+
         subtractDonuts(Math.floor(autoClickerCost));
         autoClickerCost += (autoClickerCost * .1);
 
@@ -112,6 +113,11 @@ function reset(){
     donutCount = 0;
     donutCountDisplay.innerText = `: ${donutCount.toFixed(2)}`;
 
+    for(i = 0; i <= 10000; i++)
+    {
+        clearInterval(i);
+    }
+
     autoClickerCount = 0;
     autoClickerDisplay.innerText = `: ${autoClickerCount}`;
     autoClickerCost = 100;
@@ -123,6 +129,6 @@ function reset(){
     donutMultiplierCost = 10;
     donutMultiplierCostDisplay.innerText = `(${Math.floor(donutMultiplierCost)} donuts)`;
     donutsPerClick.innerText = `(${donutMultiplier.toFixed(2)} donuts per click)`;
-    clearInterval(counter);
+
     toggleButtons();
 }

@@ -50,3 +50,8 @@ button {
     justify-content: space-evenly;
     margin-bottom: 10%;
 }
+
+.social-links {
+    height: 50px;
+    width: 50px;
+  }
