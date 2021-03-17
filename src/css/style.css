@@ -50,3 +50,17 @@ button {
     justify-content: space-evenly;
     margin-bottom: 10%;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    background-color: aqua;
+    border: solid blue 2px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
