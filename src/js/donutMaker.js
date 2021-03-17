@@ -18,7 +18,6 @@ donutMultiplierCostDisplay.innerText = `(${donutMultiplierCost} donuts)`;
 
 let donutMultiplier = 1;
 donutsPerClick.innerText = `(${donutMultiplier.toFixed(2)} donuts per click)`;
-let counter; 
 
 //Disables buttons if the user can't afford to buy auotoclicker or donut multiplier
 let autoClickerButton = document.getElementById("auto-clicker-button");
@@ -78,7 +77,7 @@ function subtractDonuts(number) {
 function addAutoClicker() {
     if (donutCount >= autoClickerCost) {
         autoClickerCount++;
-        counter = setInterval(addDonuts, 1000);   
+        setInterval(addDonuts, 1000);   
 
 
         subtractDonuts(Math.floor(autoClickerCost));
