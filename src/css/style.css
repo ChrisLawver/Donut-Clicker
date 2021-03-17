@@ -35,6 +35,16 @@ button {
     background-color: lightgray;
 }
 
+#reset-button{
+    height: 75px;
+    width: 400px;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+}
+
 #play {
     display: flex;
     justify-content: space-evenly;
