@@ -15,42 +15,47 @@
         <h1>Donut Clicker</h1>
         <nav>
             <ul>
-                <li><a href="#fred">Fred the Baker's Baking Company</a></li>
-                <li><a href="#inspiration">Inspiration</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="fred-link" href="#fred">Fred the Baker's Baking Company</a></li>
+                <li><a id="inspiration-link" href="#inspiration">Inspiration</a></li>
+                <li><a id="contact-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div id="fred" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Fred the Baker's Baking Company</h2>
-                <p>We here at Fred the Baker's Baking Company love two things: making donuts and clicking mindlessly.Hope
-                    you enjoy the game!</p>
+        <section id="modal-container">
+            <div id="fred" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Fred the Baker's Baking Company</h2>
+                    <p>We here at Fred the Baker's Baking Company love two things: making donuts and clicking
+                        mindlessly. Hope
+                        you enjoy the game!</p>
+                </div>
             </div>
-        </div>
 
-        <div id="fred" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Inspiration</h2>
-            <p>Inspired by <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> and
-                other clicking-related games.</p>
+            <div id="inspiration" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Inspiration</h2>
+                    <p>Inspired by <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie
+                            Clicker</a> and
+                        other clicking-related games.</p>
+                </div>
             </div>
-        </div>
-        <div id="fred" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Contact</h2>
-                <p>Fred the Baker's Baking Company</p>
-                <p>1234 Main Sreet</p>
-                <p>Cleveland, Ohio </p>
-                <p>Call us: (012)345-6789</p>
-                <p>Email: bakerfred@gmail.com</p>
+            <div id="contact" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Contact</h2>
+                    <p>Chris Lawver</p>
+                    <p>Cleveland, Ohio </p>
+                    <a href="https://github.com/ChrisLawver" target="_blank"><img class="social-links" src="src\Images\github.png"
+                        alt="Github"></a>
+                <a href="https://www.linkedin.com/in/chris-lawver-a55688104/" target="_blank"><img class="social-links"
+                        src="src\Images\linkedin.png" alt="linkedin"></a>
+                </div>
             </div>
-        </div>
+        </section>
 
         <div id="play">
             <section id="donut-clicker">
@@ -72,17 +77,6 @@
         <section id="reset">
             <button id="reset-button">Reset</button>
         </section>
-
-        <section>
-
-        </section>
-
-        <section id="inspiration">
-            
-        </section>
-
-        <section id="contact">
-
     </main>
 
     <footer>
