@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Project</title>
+    <title>Donut Clicker</title>
+    <link rel="stylesheet" href="src\css\style.css">
+    <link rel="shortcut icon" href="src\Images\donut5.png">
 </head>
+
 <body>
-    <div class="container">
-        <div class="anchor"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a id="fred-link" href="#fred">Fred the Baker's Baking Company</a></li>
+                <li><a id="inspiration-link" href="#inspiration">Inspiration</a></li>
+                <li><a id="contact-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="header2">
+        <img src="src\Images\donut5.png" alt="Donuts">
+        <h1>Donut Clicker</h1>
     </div>
-    <script src="/src/app.js"></script>
+    <main>
+        <section id="modal-container">
+            <div id="fred" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Fred the Baker's Baking Company</h2>
+                    <p>We here at Fred the Baker's Baking Company love two things: making donuts and clicking
+                        mindlessly. Hope
+                        you enjoy the game!</p>
+                </div>
+            </div>
+
+            <div id="inspiration" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Inspiration</h2>
+                    <p>Inspired by <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie
+                            Clicker</a> and
+                        other clicking-related games.</p>
+                </div>
+            </div>
+            <div id="contact" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Contact</h2>
+                    <p>Chris Lawver</p>
+                    <p>Cleveland, Ohio </p>
+                    <a href="https://github.com/ChrisLawver" target="_blank"><img class="social-links"
+                            src="src\Images\github.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/chris-lawver-a55688104/" target="_blank"><img
+                            class="social-links" src="src\Images\linkedin.png" alt="linkedin"></a>
+                </div>
+            </div>
+        </section>
+
+        <div id="play">
+            <section id="donut-clicker">
+                <h3>Donut Count<span id="donut-count"></span></h3>
+                <button id="donut-clicker-button">CLICK<p id="donuts-per-click"></p></button>
+            </section>
+
+            <section id="auto-clicker">
+                <h3>Auto-Clickers Active<span id="auto-clicker-count"></span></h3>
+                <button id="auto-clicker-button">Purchase Auto-Clicker<p id="buy-auto-clicker"></p></button>
+            </section>
+
+            <section id="donut-multiplier">
+                <h3>Donut Multiplier<span id="donut-multiplier-count"></span></h3>
+                <button id="donut-multiplier-button">Purchase Donut Multiplier<p id="buy-donut-multiplier"></p></button>
+            </section>
+        </div>
+
+        <section id="reset">
+            <button id="reset-button">Reset</button>
+        </section>
+    </main>
+
+    <footer>
+        &copy;2021 Chris Lawver
+    </footer>
+
+    <script src="src\js\donutMaker.js"></script>
+    <script src="src\js\app.js"></script>
 </body>
+
 </html>
