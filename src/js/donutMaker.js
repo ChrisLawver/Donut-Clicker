@@ -107,7 +107,7 @@ function addDonutMultiplier() {
     }
 }
 
-//resets the game
+//Resets the game
 function reset(){
     donutCount = 0;
     donutCountDisplay.innerText = `: ${donutCount.toFixed(2)}`;
